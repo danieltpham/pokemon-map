@@ -78,7 +78,7 @@ shinyServer(function(input, output) {
                          yref = "y",
                          x = -130,
                          y = 220,
-                         sizex = 260,
+                         sizex = 440,
                          sizey = 440,
                          sizing = "stretch",
                          opacity = 1,
