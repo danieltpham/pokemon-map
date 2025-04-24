@@ -2,6 +2,9 @@ library(plotly)
 library(shiny)
 library(shinyjs)
 
+font_add(family = "PKMN RBYGSC", regular = "www/font.ttf")
+font_add(family = "PKMN RBYGSC", regular = "font.ttf")
+
 shinyUI(fluidPage(
   
   useShinyjs(),

@@ -3,10 +3,14 @@ library(plotly)
 library(purrr)
 library(shiny)
 library(shinyjs)
+library(showtext)
 
 dir.create('~/.fonts')
 file.copy("www/font.ttf", "~/.fonts")
 system('fc-cache -f ~/.fonts')
+
+font_add(family = "PKMN RBYGSC", regular = "www/font.ttf")
+font_add(family = "PKMN RBYGSC", regular = "font.ttf")
 
 encounter <- function(x){
   return(
@@ -188,7 +192,7 @@ shinyServer(function(input, output) {
       if (is.null(clickData())) {
         paste0('<div style="padding:1.5em"><h4>Project. K-DEX!</h4></div>',
                '<div id="boxes" class=""><div id="box-group-left"><div class="box"></div><div class="box"></div><div class="box"></div><div class="box"></div></div><div id="box-group-right"><div class="box"></div><div class="box"></div><div class="box"></div><div class="box"></div></div></div><hr>',
-               '<div style="padding:1.5em">Click on each pokemon to see stats and location. <br><br>Click on each City to find information.<br><br>For more information about the creator, <a href="https://thenifinity.com" target="_blank">click here!</a></div>')
+               '<div style="padding:1.5em">Click on each pokemon to see stats and location. <br><br>Click on each City to find information.<br><br>For more information about the creator, <a href="https://danielpham.com.au" target="_blank">click here!</a></div>')
       }
       else {
       paste0('<div style="padding:1.5em"><h4>',clickData()[5],'</h4></div>',
