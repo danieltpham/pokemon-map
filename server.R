@@ -76,7 +76,7 @@ shinyServer(function(input, output) {
                     list(source =  "map.png",
                          xref = "x",
                          yref = "y",
-                         x = -130,
+                         x = -220,
                          y = 220,
                          sizex = 440,
                          sizey = 440,
@@ -167,7 +167,7 @@ shinyServer(function(input, output) {
     })
     
     output$pkmType <- renderText({
-      paste0('<br>Project. K-DEX is built with R Shiny, ShinyJS and Plotly. <br><br>Built as proof of concept that Plotly can be used for custom map data.<br><br>Built 2020 by <a href="https://thenifinity.com" target="_blank">D. Pham</a>. Inspired by <a href="https://www.datasciencecentral.com/profiles/blogs/is-r-shiny-versatile-enough-to-build-a-video-game" target="_blank">P. Silva</a> and <a href="https://amyhenning.codes/blog/recreating-pokemon-red-blue-pokedex/" target="_blank">A. Henning</a>.')
+      paste0('<br>Project. K-DEX is built with R Shiny, ShinyJS and Plotly. <br><br>Built as proof of concept that Plotly can be used for custom map data.<br><br>Built 2020 by <a href="https://www.danielpham.com.au" target="_blank">D. Pham</a>. Inspired by <a href="https://www.datasciencecentral.com/profiles/blogs/is-r-shiny-versatile-enough-to-build-a-video-game" target="_blank">P. Silva</a> and <a href="https://amyhenning.codes/blog/recreating-pokemon-red-blue-pokedex/" target="_blank">A. Henning</a>.')
     })
     
     observeEvent(uncatch_loc(), {
