@@ -4,9 +4,9 @@ library(purrr)
 library(shiny)
 library(shinyjs)
 
-#dir.create('~/.fonts')
-#file.copy("www/font.ttf", "~/.fonts")
-#system('fc-cache -f ~/.fonts')
+dir.create('~/.fonts')
+file.copy("www/font.ttf", "~/.fonts")
+system('fc-cache -f ~/.fonts')
 
 encounter <- function(x){
   return(
