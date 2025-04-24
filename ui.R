@@ -1,10 +1,10 @@
 library(plotly)
 library(shiny)
 library(shinyjs)
-library(showtext)
 
-showtext::font_add(family = "PKMN RBYGSC", regular = "www/font.ttf")
-showtext::font_add(family = "PKMN RBYGSC", regular = "font.ttf")
+dir.create('~/.fonts')
+file.copy("www/font.ttf", "~/.fonts")
+system('fc-cache -f ~/.fonts')
 
 shinyUI(fluidPage(
   
