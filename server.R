@@ -3,14 +3,10 @@ library(plotly)
 library(purrr)
 library(shiny)
 library(shinyjs)
-library(showtext)
 
 dir.create('~/.fonts')
 file.copy("www/font.ttf", "~/.fonts")
 system('fc-cache -f ~/.fonts')
-
-showtext::font_add(family = "PKMN RBYGSC", regular = "www/font.ttf")
-showtext::font_add(family = "PKMN RBYGSC", regular = "font.ttf")
 
 encounter <- function(x){
   return(

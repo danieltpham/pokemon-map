@@ -3,6 +3,11 @@
    src: url(font.tff) format("truetype");
 }
 
+@font-face { 
+  font-family: "PKMN RBYGSC";
+  src: url(www/font.tff) format("truetype");
+}
+
 body {
   font-family: "PKMN RBYGSC" !important;
   background: lightgrey;
