@@ -78,6 +78,10 @@ body {
     background-color: #000;
 }
 
+#mapPlot {
+  transform: scaleX(2);
+}
+
 /*#pkm {
   border-right: 4px solid #000;
   border-bottom: 4px solid #000;
