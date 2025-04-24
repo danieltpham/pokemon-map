@@ -1,0 +1,732 @@
+{
+  "version": 1,
+  "locale": "en_AU",
+  "platform": "4.5.0",
+  "metadata": {
+    "appmode": "shiny",
+    "primary_rmd": null,
+    "primary_html": null,
+    "content_category": null,
+    "has_parameters": false
+  },
+  "packages": {
+    "cli": {
+      "Source": "CRAN",
+      "Repository": "https://cloud.r-project.org",
+      "description": {
+        "Package": "cli",
+        "Title": "Helpers for Developing Command Line Interfaces",
+        "Version": "3.6.4",
+        "Authors@R": "c(\n    person(\"Gábor\", \"Csárdi\", , \"gabor@posit.co\", role = c(\"aut\", \"cre\")),\n    person(\"Hadley\", \"Wickham\", role = \"ctb\"),\n    person(\"Kirill\", \"Müller\", role = \"ctb\"),\n    person(\"Salim\", \"Brüggemann\", , \"salim-b@pm.me\", role = \"ctb\",\n           comment = c(ORCID = \"0000-0002-5329-5987\")),\n    person(\"Posit Software, PBC\", role = c(\"cph\", \"fnd\"))\n  )",
+        "Description": "A suite of tools to build attractive command line interfaces\n    ('CLIs'), from semantic elements: headings, lists, alerts, paragraphs,\n    etc. Supports custom themes via a 'CSS'-like language. It also\n    contains a number of lower level 'CLI' elements: rules, boxes, trees,\n    and 'Unicode' symbols with 'ASCII' alternatives. It support ANSI\n    colors and text styles as well.",
+        "License": "MIT + file LICENSE",
+        "URL": "https://cli.r-lib.org, https://github.com/r-lib/cli",
+        "BugReports": "https://github.com/r-lib/cli/issues",
+        "Depends": "R (>= 3.4)",
+        "Imports": "utils",
+        "Suggests": "callr, covr, crayon, digest, glue (>= 1.6.0), grDevices,\nhtmltools, htmlwidgets, knitr, methods, processx, ps (>=\n1.3.4.9000), rlang (>= 1.0.2.9003), rmarkdown, rprojroot,\nrstudioapi, testthat (>= 3.2.0), tibble, whoami, withr",
+        "Config/Needs/website": "r-lib/asciicast, bench, brio, cpp11, decor, desc,\nfansi, prettyunits, sessioninfo, tidyverse/tidytemplate,\nusethis, vctrs",
+        "Config/testthat/edition": "3",
+        "Encoding": "UTF-8",
+        "RoxygenNote": "7.3.2",
+        "NeedsCompilation": "yes",
+        "Packaged": "2025-02-11 21:14:07 UTC; gaborcsardi",
+        "Author": "Gábor Csárdi [aut, cre],\n  Hadley Wickham [ctb],\n  Kirill Müller [ctb],\n  Salim Brüggemann [ctb] (<https://orcid.org/0000-0002-5329-5987>),\n  Posit Software, PBC [cph, fnd]",
+        "Maintainer": "Gábor Csárdi <gabor@posit.co>",
+        "Repository": "CRAN",
+        "Date/Publication": "2025-02-13 05:20:02 UTC",
+        "Built": "R 4.5.0; x86_64-w64-mingw32; 2025-04-21 00:29:21 UTC; windows",
+        "Archs": "x64"
+      }
+    },
+    "glue": {
+      "Source": "CRAN",
+      "Repository": "https://cloud.r-project.org",
+      "description": {
+        "Package": "glue",
+        "Title": "Interpreted String Literals",
+        "Version": "1.8.0",
+        "Authors@R": "c(\n    person(\"Jim\", \"Hester\", role = \"aut\",\n           comment = c(ORCID = \"0000-0002-2739-7082\")),\n    person(\"Jennifer\", \"Bryan\", , \"jenny@posit.co\", role = c(\"aut\", \"cre\"),\n           comment = c(ORCID = \"0000-0002-6983-2759\")),\n    person(\"Posit Software, PBC\", role = c(\"cph\", \"fnd\"))\n  )",
+        "Description": "An implementation of interpreted string literals, inspired by\n    Python's Literal String Interpolation\n    <https://www.python.org/dev/peps/pep-0498/> and Docstrings\n    <https://www.python.org/dev/peps/pep-0257/> and Julia's Triple-Quoted\n    String Literals\n    <https://docs.julialang.org/en/v1.3/manual/strings/#Triple-Quoted-String-Literals-1>.",
+        "License": "MIT + file LICENSE",
+        "URL": "https://glue.tidyverse.org/, https://github.com/tidyverse/glue",
+        "BugReports": "https://github.com/tidyverse/glue/issues",
+        "Depends": "R (>= 3.6)",
+        "Imports": "methods",
+        "Suggests": "crayon, DBI (>= 1.2.0), dplyr, knitr, magrittr, rlang,\nrmarkdown, RSQLite, testthat (>= 3.2.0), vctrs (>= 0.3.0),\nwaldo (>= 0.5.3), withr",
+        "VignetteBuilder": "knitr",
+        "ByteCompile": "true",
+        "Config/Needs/website": "bench, forcats, ggbeeswarm, ggplot2, R.utils,\nrprintf, tidyr, tidyverse/tidytemplate",
+        "Config/testthat/edition": "3",
+        "Encoding": "UTF-8",
+        "RoxygenNote": "7.3.2",
+        "NeedsCompilation": "yes",
+        "Packaged": "2024-09-27 16:00:45 UTC; jenny",
+        "Author": "Jim Hester [aut] (<https://orcid.org/0000-0002-2739-7082>),\n  Jennifer Bryan [aut, cre] (<https://orcid.org/0000-0002-6983-2759>),\n  Posit Software, PBC [cph, fnd]",
+        "Maintainer": "Jennifer Bryan <jenny@posit.co>",
+        "Repository": "CRAN",
+        "Date/Publication": "2024-09-30 22:30:01 UTC",
+        "Built": "R 4.5.0; x86_64-w64-mingw32; 2025-04-21 00:29:21 UTC; windows",
+        "Archs": "x64"
+      }
+    },
+    "lifecycle": {
+      "Source": "CRAN",
+      "Repository": "https://cloud.r-project.org",
+      "description": {
+        "Package": "lifecycle",
+        "Title": "Manage the Life Cycle of your Package Functions",
+        "Version": "1.0.4",
+        "Authors@R": "c(\n    person(\"Lionel\", \"Henry\", , \"lionel@posit.co\", role = c(\"aut\", \"cre\")),\n    person(\"Hadley\", \"Wickham\", , \"hadley@posit.co\", role = \"aut\",\n           comment = c(ORCID = \"0000-0003-4757-117X\")),\n    person(\"Posit Software, PBC\", role = c(\"cph\", \"fnd\"))\n  )",
+        "Description": "Manage the life cycle of your exported functions with shared\n    conventions, documentation badges, and user-friendly deprecation\n    warnings.",
+        "License": "MIT + file LICENSE",
+        "URL": "https://lifecycle.r-lib.org/, https://github.com/r-lib/lifecycle",
+        "BugReports": "https://github.com/r-lib/lifecycle/issues",
+        "Depends": "R (>= 3.6)",
+        "Imports": "cli (>= 3.4.0), glue, rlang (>= 1.1.0)",
+        "Suggests": "covr, crayon, knitr, lintr, rmarkdown, testthat (>= 3.0.1),\ntibble, tidyverse, tools, vctrs, withr",
+        "VignetteBuilder": "knitr",
+        "Config/Needs/website": "tidyverse/tidytemplate, usethis",
+        "Config/testthat/edition": "3",
+        "Encoding": "UTF-8",
+        "RoxygenNote": "7.2.1",
+        "NeedsCompilation": "no",
+        "Packaged": "2023-11-06 16:07:36 UTC; lionel",
+        "Author": "Lionel Henry [aut, cre],\n  Hadley Wickham [aut] (<https://orcid.org/0000-0003-4757-117X>),\n  Posit Software, PBC [cph, fnd]",
+        "Maintainer": "Lionel Henry <lionel@posit.co>",
+        "Repository": "CRAN",
+        "Date/Publication": "2023-11-07 10:10:10 UTC",
+        "Built": "R 4.5.0; ; 2025-04-21 01:12:40 UTC; windows"
+      }
+    },
+    "magrittr": {
+      "Source": "CRAN",
+      "Repository": "https://cloud.r-project.org",
+      "description": {
+        "Type": "Package",
+        "Package": "magrittr",
+        "Title": "A Forward-Pipe Operator for R",
+        "Version": "2.0.3",
+        "Authors@R": "c(\n    person(\"Stefan Milton\", \"Bache\", , \"stefan@stefanbache.dk\", role = c(\"aut\", \"cph\"),\n           comment = \"Original author and creator of magrittr\"),\n    person(\"Hadley\", \"Wickham\", , \"hadley@rstudio.com\", role = \"aut\"),\n    person(\"Lionel\", \"Henry\", , \"lionel@rstudio.com\", role = \"cre\"),\n    person(\"RStudio\", role = c(\"cph\", \"fnd\"))\n  )",
+        "Description": "Provides a mechanism for chaining commands with a new\n    forward-pipe operator, %>%. This operator will forward a value, or the\n    result of an expression, into the next function call/expression.\n    There is flexible support for the type of right-hand side expressions.\n    For more information, see package vignette.  To quote Rene Magritte,\n    \"Ceci n'est pas un pipe.\"",
+        "License": "MIT + file LICENSE",
+        "URL": "https://magrittr.tidyverse.org,\nhttps://github.com/tidyverse/magrittr",
+        "BugReports": "https://github.com/tidyverse/magrittr/issues",
+        "Depends": "R (>= 3.4.0)",
+        "Suggests": "covr, knitr, rlang, rmarkdown, testthat",
+        "VignetteBuilder": "knitr",
+        "ByteCompile": "Yes",
+        "Config/Needs/website": "tidyverse/tidytemplate",
+        "Encoding": "UTF-8",
+        "RoxygenNote": "7.1.2",
+        "NeedsCompilation": "yes",
+        "Packaged": "2022-03-29 09:34:37 UTC; lionel",
+        "Author": "Stefan Milton Bache [aut, cph] (Original author and creator of\n    magrittr),\n  Hadley Wickham [aut],\n  Lionel Henry [cre],\n  RStudio [cph, fnd]",
+        "Maintainer": "Lionel Henry <lionel@rstudio.com>",
+        "Repository": "CRAN",
+        "Date/Publication": "2022-03-30 07:30:09 UTC",
+        "Built": "R 4.5.0; x86_64-w64-mingw32; 2025-04-21 00:29:21 UTC; windows",
+        "Archs": "x64"
+      }
+    },
+    "purrr": {
+      "Source": "CRAN",
+      "Repository": "https://cloud.r-project.org",
+      "description": {
+        "Package": "purrr",
+        "Title": "Functional Programming Tools",
+        "Version": "1.0.4",
+        "Authors@R": "c(\n    person(\"Hadley\", \"Wickham\", , \"hadley@posit.co\", role = c(\"aut\", \"cre\"),\n           comment = c(ORCID = \"0000-0003-4757-117X\")),\n    person(\"Lionel\", \"Henry\", , \"lionel@posit.co\", role = \"aut\"),\n    person(\"Posit Software, PBC\", role = c(\"cph\", \"fnd\"),\n           comment = c(ROR = \"03wc8by49\"))\n  )",
+        "Description": "A complete and consistent functional programming toolkit for\n    R.",
+        "License": "MIT + file LICENSE",
+        "URL": "https://purrr.tidyverse.org/, https://github.com/tidyverse/purrr",
+        "BugReports": "https://github.com/tidyverse/purrr/issues",
+        "Depends": "R (>= 4.0)",
+        "Imports": "cli (>= 3.6.1), lifecycle (>= 1.0.3), magrittr (>= 1.5.0),\nrlang (>= 1.1.1), vctrs (>= 0.6.3)",
+        "Suggests": "covr, dplyr (>= 0.7.8), httr, knitr, lubridate, rmarkdown,\ntestthat (>= 3.0.0), tibble, tidyselect",
+        "LinkingTo": "cli",
+        "VignetteBuilder": "knitr",
+        "Biarch": "true",
+        "Config/build/compilation-database": "true",
+        "Config/Needs/website": "tidyverse/tidytemplate, tidyr",
+        "Config/testthat/edition": "3",
+        "Config/testthat/parallel": "TRUE",
+        "Encoding": "UTF-8",
+        "RoxygenNote": "7.3.2",
+        "NeedsCompilation": "yes",
+        "Packaged": "2025-01-29 21:33:56 UTC; hadleywickham",
+        "Author": "Hadley Wickham [aut, cre] (<https://orcid.org/0000-0003-4757-117X>),\n  Lionel Henry [aut],\n  Posit Software, PBC [cph, fnd] (03wc8by49)",
+        "Maintainer": "Hadley Wickham <hadley@posit.co>",
+        "Repository": "CRAN",
+        "Date/Publication": "2025-02-05 18:00:01 UTC",
+        "Built": "R 4.5.0; x86_64-w64-mingw32; 2025-04-21 01:45:51 UTC; windows",
+        "Archs": "x64"
+      }
+    },
+    "rlang": {
+      "Source": "CRAN",
+      "Repository": "https://cloud.r-project.org",
+      "description": {
+        "Package": "rlang",
+        "Version": "1.1.6",
+        "Title": "Functions for Base Types and Core R and 'Tidyverse' Features",
+        "Description": "A toolbox for working with base types, core R features\n  like the condition system, and core 'Tidyverse' features like tidy\n  evaluation.",
+        "Authors@R": "c(\n    person(\"Lionel\", \"Henry\", ,\"lionel@posit.co\", c(\"aut\", \"cre\")),\n    person(\"Hadley\", \"Wickham\", ,\"hadley@posit.co\", \"aut\"),\n    person(given = \"mikefc\",\n           email = \"mikefc@coolbutuseless.com\",\n           role = \"cph\",\n           comment = \"Hash implementation based on Mike's xxhashlite\"),\n    person(given = \"Yann\",\n           family = \"Collet\",\n           role = \"cph\",\n           comment = \"Author of the embedded xxHash library\"),\n    person(given = \"Posit, PBC\", role = c(\"cph\", \"fnd\"))\n    )",
+        "License": "MIT + file LICENSE",
+        "ByteCompile": "true",
+        "Biarch": "true",
+        "Depends": "R (>= 3.5.0)",
+        "Imports": "utils",
+        "Suggests": "cli (>= 3.1.0), covr, crayon, desc, fs, glue, knitr,\nmagrittr, methods, pillar, pkgload, rmarkdown, stats, testthat\n(>= 3.2.0), tibble, usethis, vctrs (>= 0.2.3), withr",
+        "Enhances": "winch",
+        "Encoding": "UTF-8",
+        "RoxygenNote": "7.3.2",
+        "URL": "https://rlang.r-lib.org, https://github.com/r-lib/rlang",
+        "BugReports": "https://github.com/r-lib/rlang/issues",
+        "Config/build/compilation-database": "true",
+        "Config/testthat/edition": "3",
+        "Config/Needs/website": "dplyr, tidyverse/tidytemplate",
+        "NeedsCompilation": "yes",
+        "Packaged": "2025-04-10 09:25:27 UTC; lionel",
+        "Author": "Lionel Henry [aut, cre],\n  Hadley Wickham [aut],\n  mikefc [cph] (Hash implementation based on Mike's xxhashlite),\n  Yann Collet [cph] (Author of the embedded xxHash library),\n  Posit, PBC [cph, fnd]",
+        "Maintainer": "Lionel Henry <lionel@posit.co>",
+        "Repository": "CRAN",
+        "Date/Publication": "2025-04-11 08:40:10 UTC",
+        "Built": "R 4.5.0; x86_64-w64-mingw32; 2025-04-21 00:29:21 UTC; windows",
+        "Archs": "x64"
+      }
+    },
+    "vctrs": {
+      "Source": "CRAN",
+      "Repository": "https://cloud.r-project.org",
+      "description": {
+        "Package": "vctrs",
+        "Title": "Vector Helpers",
+        "Version": "0.6.5",
+        "Authors@R": "c(\n    person(\"Hadley\", \"Wickham\", , \"hadley@posit.co\", role = \"aut\"),\n    person(\"Lionel\", \"Henry\", , \"lionel@posit.co\", role = \"aut\"),\n    person(\"Davis\", \"Vaughan\", , \"davis@posit.co\", role = c(\"aut\", \"cre\")),\n    person(\"data.table team\", role = \"cph\",\n           comment = \"Radix sort based on data.table's forder() and their contribution to R's order()\"),\n    person(\"Posit Software, PBC\", role = c(\"cph\", \"fnd\"))\n  )",
+        "Description": "Defines new notions of prototype and size that are used to\n    provide tools for consistent and well-founded type-coercion and\n    size-recycling, and are in turn connected to ideas of type- and\n    size-stability useful for analysing function interfaces.",
+        "License": "MIT + file LICENSE",
+        "URL": "https://vctrs.r-lib.org/, https://github.com/r-lib/vctrs",
+        "BugReports": "https://github.com/r-lib/vctrs/issues",
+        "Depends": "R (>= 3.5.0)",
+        "Imports": "cli (>= 3.4.0), glue, lifecycle (>= 1.0.3), rlang (>= 1.1.0)",
+        "Suggests": "bit64, covr, crayon, dplyr (>= 0.8.5), generics, knitr,\npillar (>= 1.4.4), pkgdown (>= 2.0.1), rmarkdown, testthat (>=\n3.0.0), tibble (>= 3.1.3), waldo (>= 0.2.0), withr, xml2,\nzeallot",
+        "VignetteBuilder": "knitr",
+        "Config/Needs/website": "tidyverse/tidytemplate",
+        "Config/testthat/edition": "3",
+        "Encoding": "UTF-8",
+        "Language": "en-GB",
+        "RoxygenNote": "7.2.3",
+        "NeedsCompilation": "yes",
+        "Packaged": "2023-12-01 16:27:12 UTC; davis",
+        "Author": "Hadley Wickham [aut],\n  Lionel Henry [aut],\n  Davis Vaughan [aut, cre],\n  data.table team [cph] (Radix sort based on data.table's forder() and\n    their contribution to R's order()),\n  Posit Software, PBC [cph, fnd]",
+        "Maintainer": "Davis Vaughan <davis@posit.co>",
+        "Repository": "CRAN",
+        "Date/Publication": "2023-12-01 23:50:02 UTC",
+        "Built": "R 4.5.0; x86_64-w64-mingw32; 2025-04-21 01:26:52 UTC; windows",
+        "Archs": "x64"
+      }
+    }
+  },
+  "files": {
+    ".RData": {
+      "checksum": "a6de2f330878950601fe639957a12299"
+    },
+    "docs/map.jpg": {
+      "checksum": "34dd05185227f461232b2f16653ee10c"
+    },
+    "docs/pkm_map.gif": {
+      "checksum": "c5860ce95949d7365db9889344d7ec55"
+    },
+    "docs/pkm_map1.jpg": {
+      "checksum": "d6953113bc04530aa65f94e4fec9134b"
+    },
+    "docs/pkm_map2.jpg": {
+      "checksum": "285b63b666109e2b00f0f31b43b679c5"
+    },
+    "docs/pkm_map3.jpg": {
+      "checksum": "c5c069159a6c303d0afdfc5113700c97"
+    },
+    "docs/pkm_map4.jpg": {
+      "checksum": "b00850c9fb59c3840473a827504e570c"
+    },
+    "server.R": {
+      "checksum": "85cf5c6699b8fd6f704512d15c204fca"
+    },
+    "ui.R": {
+      "checksum": "848c8be9373a5634305c8cfc8bf62e49"
+    },
+    "www/data.csv": {
+      "checksum": "0afb4161a9dff0988d4922336841274e"
+    },
+    "www/font.ttf": {
+      "checksum": "65780863e7302fe257df982341d6a1cb"
+    },
+    "www/map.png": {
+      "checksum": "c56414a2a269cfda8dff1b7134766f5a"
+    },
+    "www/pokemon_data.csv": {
+      "checksum": "d39ebef071ce965a74447a532b8748a7"
+    },
+    "www/PowerGreen.ttf": {
+      "checksum": "10683dd0144b8d455f940164193a5b89"
+    },
+    "www/sprite/1.png": {
+      "checksum": "30187f0b74efbbeee36e98312ec4ca9f"
+    },
+    "www/sprite/10.png": {
+      "checksum": "5c723b39a1c9c1c2a3116178c9da76bf"
+    },
+    "www/sprite/100.png": {
+      "checksum": "b3445fd0ef74cb1e960ce55a62a42d7a"
+    },
+    "www/sprite/101.png": {
+      "checksum": "58f5daba5ff6b7faabda61a48e935688"
+    },
+    "www/sprite/102.png": {
+      "checksum": "c32f0d85c1a3b79bc6d7059b832fe214"
+    },
+    "www/sprite/103.png": {
+      "checksum": "79fa860e07a49de3bb5ae7407057ca49"
+    },
+    "www/sprite/104.png": {
+      "checksum": "7ea63875f9572600a0af698aa5f70116"
+    },
+    "www/sprite/105.png": {
+      "checksum": "a0141dfeac9de40227e37ff1881d62ee"
+    },
+    "www/sprite/106.png": {
+      "checksum": "52e650bc6a72fa1a063b9bd944243189"
+    },
+    "www/sprite/107.png": {
+      "checksum": "29312bef5e380fd3b86f0b04ac2cbaf3"
+    },
+    "www/sprite/108.png": {
+      "checksum": "d4c7ccd742e09f7be6a01b616f1ff85b"
+    },
+    "www/sprite/109.png": {
+      "checksum": "8a666730f6353b536d9a76893b04de90"
+    },
+    "www/sprite/11.png": {
+      "checksum": "5a4ce78d538f254382300668a8562245"
+    },
+    "www/sprite/110.png": {
+      "checksum": "8013e126ee86f4046e047d3182d75cb5"
+    },
+    "www/sprite/111.png": {
+      "checksum": "71166d1088f0f778fb74527b31070fc8"
+    },
+    "www/sprite/112.png": {
+      "checksum": "c8040d45338327f8e436489b7ea22149"
+    },
+    "www/sprite/113.png": {
+      "checksum": "72bb266e48e8a567468087efdca431ea"
+    },
+    "www/sprite/114.png": {
+      "checksum": "5ee1d4c5fa659d6abacab35e701402d1"
+    },
+    "www/sprite/115.png": {
+      "checksum": "ca222525455e71ea0ce6f8d52a853ab3"
+    },
+    "www/sprite/116.png": {
+      "checksum": "20206e7cf864df2042041740710f37ca"
+    },
+    "www/sprite/117.png": {
+      "checksum": "518741b25599048d8c4bb1e4a8ad4950"
+    },
+    "www/sprite/118.png": {
+      "checksum": "5e1c237b2131b96dca95e6c7ca15e094"
+    },
+    "www/sprite/119.png": {
+      "checksum": "e6d0b121363e304916d4d9b85f6dd965"
+    },
+    "www/sprite/12.png": {
+      "checksum": "b4979b905e63ecb8a702d1fa5727756e"
+    },
+    "www/sprite/120.png": {
+      "checksum": "e3928600d86b9bf1b89bbf7d662a619e"
+    },
+    "www/sprite/121.png": {
+      "checksum": "5d690749cfe9bc6ea8a815a95c02fe01"
+    },
+    "www/sprite/122.png": {
+      "checksum": "e72ee150fa4b03d015a16d230b356e4a"
+    },
+    "www/sprite/123.png": {
+      "checksum": "455cc86bcf7c255952e1c5ad90c7af86"
+    },
+    "www/sprite/124.png": {
+      "checksum": "68d356b44b8463553891ba541b817d06"
+    },
+    "www/sprite/125.png": {
+      "checksum": "60dbb6f8c34f63ce8c13a4c0f113596f"
+    },
+    "www/sprite/126.png": {
+      "checksum": "11a639c181c13459622553e5fa4a0130"
+    },
+    "www/sprite/127.png": {
+      "checksum": "cad98211d812d5e83d5af8b37c54aef1"
+    },
+    "www/sprite/128.png": {
+      "checksum": "a52204a1ce7fd536e051f0281a3c6ede"
+    },
+    "www/sprite/129.png": {
+      "checksum": "7842fe2362c3b37884dd72e071f83c5e"
+    },
+    "www/sprite/13.png": {
+      "checksum": "a3770e5927cb5f6344dab03ccd382a4a"
+    },
+    "www/sprite/130.png": {
+      "checksum": "ce7a8bac3e9912f84376734b49964d2e"
+    },
+    "www/sprite/131.png": {
+      "checksum": "f74dd589e21aebccc901ddcbcfe714ce"
+    },
+    "www/sprite/132.png": {
+      "checksum": "6ceae16be8a890735df273f49288f46d"
+    },
+    "www/sprite/133.png": {
+      "checksum": "7e40cb48c33f4802187901b6d43b944e"
+    },
+    "www/sprite/134.png": {
+      "checksum": "5376cf1ebdcd0fe85318fd18ba73316a"
+    },
+    "www/sprite/135.png": {
+      "checksum": "d067c5df59ccaee5a010d21cf0843280"
+    },
+    "www/sprite/136.png": {
+      "checksum": "11309e1ac5d4880d0bf25403d19d55a5"
+    },
+    "www/sprite/137.png": {
+      "checksum": "142b102cfbaa83e3e13abe35e28133b7"
+    },
+    "www/sprite/138.png": {
+      "checksum": "a3ffa6400e6745a8cc1badf0aebabd15"
+    },
+    "www/sprite/139.png": {
+      "checksum": "f1898965ce2d73062e0c7d43eb0143f4"
+    },
+    "www/sprite/14.png": {
+      "checksum": "9ed8f9e01fcce298b82b86dbb41fa588"
+    },
+    "www/sprite/140.png": {
+      "checksum": "f02393b54fa7dc877e60c9bbd66ae6cc"
+    },
+    "www/sprite/141.png": {
+      "checksum": "cea4197dea9043a4f4eed2269476610b"
+    },
+    "www/sprite/142.png": {
+      "checksum": "5b26235a9073af7de6abcc396bf925ff"
+    },
+    "www/sprite/143.png": {
+      "checksum": "1754c1c2e66b4698410bc60bb978867a"
+    },
+    "www/sprite/144.png": {
+      "checksum": "65f0063b4d9ff53803a8e579eb1a9b63"
+    },
+    "www/sprite/145.png": {
+      "checksum": "64341079c6418a0dd18d9b31d9544a0c"
+    },
+    "www/sprite/146.png": {
+      "checksum": "6858d1dc9e89818a73b0361d971b5dbb"
+    },
+    "www/sprite/147.png": {
+      "checksum": "aeac0c273962ef47c89aec2e6e0e6760"
+    },
+    "www/sprite/148.png": {
+      "checksum": "99b87cc34eb4209d74f1a8931ae121be"
+    },
+    "www/sprite/149.png": {
+      "checksum": "dd29c0608fdb2932d4ce697a26ef00b2"
+    },
+    "www/sprite/15.png": {
+      "checksum": "db61c6bd89c647c42b679a7783afcf70"
+    },
+    "www/sprite/150.png": {
+      "checksum": "fb29c70f726efbf1afe3e9876f77f8a9"
+    },
+    "www/sprite/151.png": {
+      "checksum": "5f1f25cf6f4254ee059ce49f0a51f005"
+    },
+    "www/sprite/16.png": {
+      "checksum": "e232317ca8c8cb4a7ee0d16c832f1343"
+    },
+    "www/sprite/17.png": {
+      "checksum": "ce5d874132af559ca7d2457fb6a4b043"
+    },
+    "www/sprite/18.png": {
+      "checksum": "a7d664d13e15a3e6d2e085cb9d5ca4a2"
+    },
+    "www/sprite/19.png": {
+      "checksum": "2f7c0c523e25d46c61edf4cba9c0b8b8"
+    },
+    "www/sprite/2.png": {
+      "checksum": "6d28b7014c090fa960d5d97320594a06"
+    },
+    "www/sprite/20.png": {
+      "checksum": "fa3faec8f98b7913036f438c1a451bd2"
+    },
+    "www/sprite/21.png": {
+      "checksum": "f09e7362eca85d642d5c73f1c5a225b6"
+    },
+    "www/sprite/22.png": {
+      "checksum": "2918fbfbd4cd35c791df32609d9159ba"
+    },
+    "www/sprite/23.png": {
+      "checksum": "1798ca9c47290b43bc09af32b4331e92"
+    },
+    "www/sprite/24.png": {
+      "checksum": "bc2c17e267c3a0d18a4148c0a95b9b8c"
+    },
+    "www/sprite/25.png": {
+      "checksum": "22a7cd37f9ec8d05f9d05af7dc386339"
+    },
+    "www/sprite/26.png": {
+      "checksum": "88304410a2923f860c3383e351e3d64e"
+    },
+    "www/sprite/27.png": {
+      "checksum": "7bd679dc1aaa37f2344c58a97463bade"
+    },
+    "www/sprite/28.png": {
+      "checksum": "040632dfe29b1593cdf6cdddcc027da1"
+    },
+    "www/sprite/29.png": {
+      "checksum": "6844783be1eb4054edba04df3d213095"
+    },
+    "www/sprite/3.png": {
+      "checksum": "139faabce474da69df6e27a994e0959f"
+    },
+    "www/sprite/30.png": {
+      "checksum": "247f8783feefeb6ff0d2dc0f540ec461"
+    },
+    "www/sprite/31.png": {
+      "checksum": "3122ae16b960c3fda9142cb8bbbe732f"
+    },
+    "www/sprite/32.png": {
+      "checksum": "664773844c2b25bddc5b384d938bc2c2"
+    },
+    "www/sprite/33.png": {
+      "checksum": "edda15da6b3dac4272f84e13647bafba"
+    },
+    "www/sprite/34.png": {
+      "checksum": "91ff5c425751234ae9504bb66b7e410d"
+    },
+    "www/sprite/35.png": {
+      "checksum": "88de1d382830cb229b097343ca7b9a96"
+    },
+    "www/sprite/36.png": {
+      "checksum": "68d85bd2666d8868c25c24a05172b4b3"
+    },
+    "www/sprite/37.png": {
+      "checksum": "178b3332a71c5385d9fdf6869c11ced2"
+    },
+    "www/sprite/38.png": {
+      "checksum": "e649a673d4a62cd874852c58f71e80df"
+    },
+    "www/sprite/39.png": {
+      "checksum": "728425e8ba4bbf37f1e624e4c9bc7759"
+    },
+    "www/sprite/4.png": {
+      "checksum": "0fe89c3fa8ca3277ca25c03a6377254e"
+    },
+    "www/sprite/40.png": {
+      "checksum": "de775d2298ce721ba02ea9708a2d2f3e"
+    },
+    "www/sprite/41.png": {
+      "checksum": "b4fc402dabfc5c26c6483cc6ab413698"
+    },
+    "www/sprite/42.png": {
+      "checksum": "e97e90acc6a3d12dc0eb46fd73e7a426"
+    },
+    "www/sprite/43.png": {
+      "checksum": "f981c964b7f526aa9dfb93a7b483bb2e"
+    },
+    "www/sprite/44.png": {
+      "checksum": "ca6bb5e76911a2c18d68cba6e0b03855"
+    },
+    "www/sprite/45.png": {
+      "checksum": "d2eaa08f3847dd609849caba3df24939"
+    },
+    "www/sprite/46.png": {
+      "checksum": "49a0023d0d901895d611339d696b8b40"
+    },
+    "www/sprite/47.png": {
+      "checksum": "643294da6d91f9a70f3b5894bd059306"
+    },
+    "www/sprite/48.png": {
+      "checksum": "a60a3b1883a35a5e9dca7616a8a3599f"
+    },
+    "www/sprite/49.png": {
+      "checksum": "cb2067b05596932f027af3c36492acd6"
+    },
+    "www/sprite/5.png": {
+      "checksum": "e2d7da3b99b42aee5995fb570fb40009"
+    },
+    "www/sprite/50.png": {
+      "checksum": "6cfcd83ddabaec02a74389285daec2b1"
+    },
+    "www/sprite/51.png": {
+      "checksum": "acff29e08990527190a64934ab4cbd77"
+    },
+    "www/sprite/52.png": {
+      "checksum": "a567708217a9a34b7873ce969a5f8af2"
+    },
+    "www/sprite/53.png": {
+      "checksum": "20ffc003fb2e32398c6fd081222e35ce"
+    },
+    "www/sprite/54.png": {
+      "checksum": "bbc30042d8d843903a7da374bed826af"
+    },
+    "www/sprite/55.png": {
+      "checksum": "ad0fe765d795ee288cb6da96bb9bbf2c"
+    },
+    "www/sprite/56.png": {
+      "checksum": "5a6561fcb3ca7144beb5da5fbc0fecf5"
+    },
+    "www/sprite/57.png": {
+      "checksum": "2be86340a210421218715cbc29b7d909"
+    },
+    "www/sprite/58.png": {
+      "checksum": "88d6c25e8c984efd1d3bb1a9c0f8bc82"
+    },
+    "www/sprite/59.png": {
+      "checksum": "066ab9f9a0d77a5340fef15b7a12faef"
+    },
+    "www/sprite/6.png": {
+      "checksum": "814385ab8ecb0a1d26b45326ecbd63ad"
+    },
+    "www/sprite/60.png": {
+      "checksum": "fa34d7358ec553ea641c1a6f8e6e59a6"
+    },
+    "www/sprite/61.png": {
+      "checksum": "07f3be9d5d524325c9dba2850d05c2a3"
+    },
+    "www/sprite/62.png": {
+      "checksum": "39d9e5722fb1b71c848646fa586085e6"
+    },
+    "www/sprite/63.png": {
+      "checksum": "efbbc3cb1d38bb964a6920c3da4aef46"
+    },
+    "www/sprite/64.png": {
+      "checksum": "40f5391a8df6b2c98f94b61cf5c26ee3"
+    },
+    "www/sprite/65.png": {
+      "checksum": "c987270708e43988cb038423be095231"
+    },
+    "www/sprite/66.png": {
+      "checksum": "8f791d92cfc1c8851abf23e238c245b5"
+    },
+    "www/sprite/67.png": {
+      "checksum": "694ee1b1411bd3ac65da3dc1e432c0a4"
+    },
+    "www/sprite/68.png": {
+      "checksum": "a2c5476a1edabd5b8490e65b6c68ad6f"
+    },
+    "www/sprite/69.png": {
+      "checksum": "049889ddb905e17d06e72bb2b4e2deac"
+    },
+    "www/sprite/7.png": {
+      "checksum": "ef3c247616db72fbb086a15bc1215b51"
+    },
+    "www/sprite/70.png": {
+      "checksum": "a96ffa32f9b3a46e2f18c0f2017aa216"
+    },
+    "www/sprite/71.png": {
+      "checksum": "7edbb7693d078b69e570d2dd3c0d3b7d"
+    },
+    "www/sprite/72.png": {
+      "checksum": "91951af1211e23f6708f858322405c4f"
+    },
+    "www/sprite/73.png": {
+      "checksum": "c53b288f581eeae5d1565e23d4906b0b"
+    },
+    "www/sprite/74.png": {
+      "checksum": "036c524b6c91311a87755a6169f92f6b"
+    },
+    "www/sprite/75.png": {
+      "checksum": "4efc9f81b9a50d8158d0033e4bcf1f4d"
+    },
+    "www/sprite/76.png": {
+      "checksum": "c7aa04cf07e7e216cd4ce7ea1a7cde2f"
+    },
+    "www/sprite/77.png": {
+      "checksum": "0886bb7300ed9134d274d2a8bc4890d8"
+    },
+    "www/sprite/78.png": {
+      "checksum": "9a6213207fb72228f6c95571d78a1c35"
+    },
+    "www/sprite/79.png": {
+      "checksum": "14c2045c243c5c498a09d8860314c897"
+    },
+    "www/sprite/8.png": {
+      "checksum": "2d71a04733f578338fb82ade931d3143"
+    },
+    "www/sprite/80.png": {
+      "checksum": "7b54e657454baee4792d51072f8cf86c"
+    },
+    "www/sprite/81.png": {
+      "checksum": "53aa185e2bd64c77c4d9cba60ee35e28"
+    },
+    "www/sprite/82.png": {
+      "checksum": "02dbc83c915c1808517ef2c6e23718e8"
+    },
+    "www/sprite/83.png": {
+      "checksum": "4b46db6653dc62deac43eb82e60d93c8"
+    },
+    "www/sprite/84.png": {
+      "checksum": "a8266f94c5b49eb4201875dd5117043d"
+    },
+    "www/sprite/85.png": {
+      "checksum": "743260df8d8d7d00a2369f9863f808d2"
+    },
+    "www/sprite/86.png": {
+      "checksum": "9e35dd389334e17c0a1108245e8e8628"
+    },
+    "www/sprite/87.png": {
+      "checksum": "2648bf4b72883280ce9311dc07ea1130"
+    },
+    "www/sprite/88.png": {
+      "checksum": "31cfa38b08b7a58dbc9e068acd5c6392"
+    },
+    "www/sprite/89.png": {
+      "checksum": "e8f9639eeaf34a7f852cbd1eaf477b49"
+    },
+    "www/sprite/9.png": {
+      "checksum": "b89bed00b57fd1bd674907fe80b8ce51"
+    },
+    "www/sprite/90.png": {
+      "checksum": "4a58419b8ae148afd9a21be3609e0464"
+    },
+    "www/sprite/91.png": {
+      "checksum": "f4e62e8ea8cec68da53349c93c1d9d50"
+    },
+    "www/sprite/92.png": {
+      "checksum": "cbb5bc81e0ec98fe3a05e03d11a3c2a9"
+    },
+    "www/sprite/93.png": {
+      "checksum": "2a7bcc7a81df08f49afc067cbb9cba9c"
+    },
+    "www/sprite/94.png": {
+      "checksum": "c11c5e33eb1c4a415fa13943ab12933b"
+    },
+    "www/sprite/95.png": {
+      "checksum": "7345b1f9908bac26bed98559d303a516"
+    },
+    "www/sprite/96.png": {
+      "checksum": "d4f113ba0fbe1d5574275bb53122ad75"
+    },
+    "www/sprite/97.png": {
+      "checksum": "bfedd44263b180233bed5243c40d769e"
+    },
+    "www/sprite/98.png": {
+      "checksum": "2a52ecf8e5784e4b59ffd94bdb728e8a"
+    },
+    "www/sprite/99.png": {
+      "checksum": "ab7cb8df3aae6ea620e99c2289051831"
+    },
+    "www/stylesheet.css": {
+      "checksum": "4418d73bf9791a3d092b969ae278ec3a"
+    }
+  },
+  "users": null
+}
