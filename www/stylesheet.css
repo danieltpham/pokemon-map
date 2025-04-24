@@ -1,7 +1,7 @@
-@font-face { 
+/* @font-face { 
    font-family: "PKMN RBYGSC";
    src: url(font.tff) format("truetype");
-}
+} */
 
 /* @font-face { 
   font-family: "PKMN RBYGSC";
@@ -9,7 +9,7 @@
 } */
 
 body {
-  font-family: "PKMN RBYGSC" !important;
+  /* font-family: "PKMN RBYGSC" !important; */
   background: lightgrey;
 }
 

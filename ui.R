@@ -12,6 +12,16 @@ shinyUI(fluidPage(
   
   tags$head(
     tags$link(rel = "stylesheet", type = "text/css", href = "stylesheet.css"),
+    
+    tags$style(HTML(
+"@font-face {                         
+  font-family: 'CustomFont';          
+  src: url('font.ttf') format('truetype');
+}
+body {                                
+  font-family: 'CustomFont', sans-serif;
+}
+"    )),
     tags$script(HTML(
       "$(document).on('click', '.sprite', function() {
       Shiny.setInputValue('sprite', $(this).data('value'));
