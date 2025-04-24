@@ -76,7 +76,7 @@ shinyServer(function(input, output) {
                     list(source =  "map.png",
                          xref = "x",
                          yref = "y",
-                         x = -220,
+                         x = -175,
                          y = 220,
                          sizex = 440,
                          sizey = 440,
