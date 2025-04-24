@@ -1,0 +1,178 @@
+@font-face { 
+   font-family: "PKMN RBYGSC";
+   src: url(font.tff) format("truetype");
+}
+
+body {
+  font-family: "PKMN RBYGSC" !important;
+  background: lightgrey;
+}
+
+.sprite {
+  opacity:0.5;
+}
+
+.sprite:focus, .sprite:hover {
+  opacity:1 !important;
+  outline: none !important;
+}
+
+#imageGrid::-webkit-scrollbar {
+  display: none;
+}
+
+#imageGrid {
+  background: white;
+  height: 168px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  border: 5px double #000;
+  box-shadow: 0  1.5px 0  0 black,
+              inset 0 1.5px 0 0 black;margin: 10px;
+  padding: 5px;
+  position: absolute;
+  
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+#pkmStat {
+  height: auto !important;
+}
+
+.top-left {
+    transform: translate(18px,5px);
+    left: 1px;
+}
+
+.top-right {
+    transform: translate(-4px,5px);
+    right: 1px;
+}
+
+.bottom-left {
+    transform: translate(18px,166px);
+    left: 1px;
+}
+
+.bottom-right {
+    transform: translate(-4px,166px);
+    right: 1px;
+}
+
+.pokeball, .pokeball-upper {
+    position: absolute;
+    width: 16px;
+}
+
+.pokeball {
+    height: 16px;
+    border: 2px solid #000;
+    border-radius: 50%;
+    background-color: #fafafa;
+}
+
+.pokeball-upper {
+    height: 8px;
+    border-radius: 16px 16px 0 0;
+    background-color: #000;
+}
+
+/*#pkm {
+  border-right: 4px solid #000;
+  border-bottom: 4px solid #000;
+  border-radius: .25em;
+  padding-right: .25em;
+  padding-bottom: .25em;
+  height: 50%;
+}*/
+
+.layer-above .shapelayer {
+  animation:blinking 1s infinite;
+}
+
+@keyframes blinking{
+    0%{     opacity: 1;    }
+    49%{    opacity: 1; }
+    60%{    opacity: 0; }
+    99%{    opacity: 0;  }
+    100%{   opacity: 0;    }
+}
+
+.message {
+  position: absolute;
+    top: 50%;
+    left: 50%;
+    background: white;
+    padding: 10px;
+    transform: translate(-20%,-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+      border: 5px double #000;
+  box-shadow: 0  1.5px 0  0 black,
+              inset 0 1.5px 0 0 black;margin: 10px;
+}
+
+.box {
+      width: 10px;
+    height: 10px;
+    border: 2px solid #000;
+    background-color: #fafafa;
+}
+
+#box-group-left, #box-group-right {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#box-group-left {
+    margin-right: 2em;
+    margin-left: .5em;
+}
+
+#box-group-right {
+    margin-right: .5em;
+    margin-left: 2em;
+}
+
+#boxes {
+    position: relative;
+    top: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+hr {
+    margin-top: 1.75em;
+    margin-bottom: 0;
+    border: 1px solid #000;
+}
+
+#rightPanel, #pkm {
+    border: 2px solid #333;
+    background-color: #fafafa;
+    box-shadow: 0 0 0 5px rgba(118,118,118,1);
+    height: 350px;
+    width: 300px;
+    margin-top:20px;
+    padding:0;
+}
+
+#pkmStat .plot-container .svg-container {
+  height: 225px !important;
+}
+
+#pkm {
+  margin-left:20px;
+  padding: 1em 1.5em 1em 1.5em;
+}
+
+.main-svg {
+  background: none !important;
+}
