@@ -142,7 +142,7 @@ shinyServer(function(input, output) {
           config(displayModeBar = F) %>%
           layout(
             hovermode = FALSE,
-            font = list(family = "PKMN RBYGSC"),
+            font = list(family = "CustomFont"),
             yaxis = list(categoryorder = "array",
                          categoryarray = rev(names(data_point)),
                          title = "",
